@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Random random = new Random();
-
                 int num = random.nextInt(6);
                 leftDice.setImageResource(diceArray[num]);
                 num = random.nextInt(6);
