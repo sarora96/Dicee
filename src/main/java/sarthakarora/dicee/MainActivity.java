@@ -29,15 +29,12 @@ public class MainActivity extends AppCompatActivity {
         roll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("Dicee", "Ze Button has been pressed!");
-
                 Random random = new Random();
 
                 int num = random.nextInt(6);
                 leftDice.setImageResource(diceArray[num]);
                 num = random.nextInt(6);
                 rightDice.setImageResource(diceArray[num]);
-                Log.d("Dicee", "The random number is " + num);
 
             }
         });
